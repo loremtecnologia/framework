@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canais desse pacote - SKY</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        padding: 8px;
+        min-height: 60px;
+        width: 100%;
+        margin-bottom: 7px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        font-size: 4vw !important;
+    }
+</style>
+
+<body>
+</body>
+<script>
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+    $(document).ready(function () {
+        var sku = getParameterByName('sku');
+        //alert(sku)
+
+
+        $.ajax({
+            type: "POST",
+            url: 'https://us-central1-hml-apicenter.cloudfunctions.net/apicenter/gDJw8MNHlXJI/sky/skucatalog',
+            headers: {
+                "token": "xGnYG6XP1fgdqlfFw",
+                "accountname": "sky",
+                "environment": "vtexcommercestable",
+                "appkey": "vtexappkey-sky-XDRSNU",
+                "apptoken": "YYCEIIPCPTYGFRPQZPVKJNECKITZGJIJLFMHEXXJEQUIOOTPVHUXGBHLTZTAPPWFLOUZEIMCSMGTTWOVPDEYPKDJYBOEDWUOUOXZUTKNVSETVNRWLYLLKXPALKBDTHYW"
+            },
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify(
+                body = {
+                    "sku": sku
+                }),
+            dataType: 'json',
+            success: function (response) {
+                response.ProductSpecifications.forEach(element => {
+                    //console.log(element.FieldName)
+                    $('body').append('<div class="col-5 menu"><ul><li>' + element.FieldName + '</li></ul></div>');
+                });
+            },
+            error: function (err) {
+                console.log(JSON.stringify(err))
+            }
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "orchestrator",
+  "version": "0.0.1",
+  "description": "orchestrator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "async": "^2.6.1",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "google-oauth-jwt": "^0.2.0",
+    "moment": "^2.20.1",
+    "mongoose": "^5.2.2",
+    "request": "^2.83.0"
+  },
+  "private": true
+}

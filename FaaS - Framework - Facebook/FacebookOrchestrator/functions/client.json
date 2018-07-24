@@ -1,0 +1,32 @@
+[
+    {
+        "pageName": "Umvpbot",
+        "pageID": 572650146454510,
+        "PAGE_ACCESS_TOKEN": "EAADN5CU6C84BAMQXfstRICMePuxrUWZB4ufT2SR9bUZBAoxZCaWHWIQNnoZAswB7G6guo4fUZBwoqgruioVgXXlaHNZBiwmaaxl6N7vSLXcqnM1PgUOPNKAThq6UIvR6es7eZANk0oqdeZCxobFDNc1yZALSyvjoyLZCfEHWkbEUX8BgZDZD",
+        "Agent": "Unip_MVP01",
+        "Platform": "Dialogflow",
+        "Dialogflow": {
+            "ProjectID": "poc-messnger",
+            "ServiceAccount": "dialogflow-hjjlyi@poc-messnger.iam.gserviceaccount.com",
+            "Clientaccesstoken": "0dff20565c2f4dccbb3d178bdf738e56",
+            "Developeraccesstoken": "25ed5da19ecc49ce95e9a9953a036908",
+            "GoogleAuth": {
+                "type": "service_account",
+                "project_id": "poc-messnger",
+                "private_key_id": "89adfade4887458b3ac4ec06c8d945c165bc275e",
+                "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCVXJSPlbil+JKI\nVbwtonPZ+hAyY++JHWBh3XZPLbGSdvNRJc1eQ+LXTB8hioCFozY0dpiQKnzD69P4\nhErBud+ai9u6erR++MU6sfkkuWY5pvGTD3/aUpa8Nrz0zWyPiekPFmkJUlWpC0nB\nUbWVbjyXLs4NICi83cJWopBZW4Kfeyf9FIXwXXJhgMnWvAYBE84/svlX2qiFg78S\nln+u9OhCYj0mVEB7zzHVzZ9XRr7hgiAhUeIPSr3dT3gKymeAIXAmXExhovmxQiVj\nhAJpgf1+gkrAspzdRK+nawsMFFUroAxpOUn9gOe98HAXYv4+1MD9xUkhwMnAGmaz\n0Ky3I69xAgMBAAECggEAJ81ml4beEHiXz/YM8hpHBjEBzPPduuvVqe7C3uG93tqN\nB7RrsHGlyxrxdtY6XqJ6SOvLxytTWUCImcLjSxHV2RDpKp4VaHqx0GzqCFPRvo5S\n9Q4d05fLrHdnzlLJ2cx2C3u83OuQgT5NVtOH8LzSL7Wc2lmWEZKE/eJPVkixG/9k\n74iTz9HU94o8FOh2GJ/GdJR6Z2W6EyPzxz5ACrKsnSPayppwzNJl3qunX8JmjYiT\n63M33QCS652tNl9s2ClDXcWY/+H5vjp2SensNnjN5RW3RTtnKfK9zuLkxB9fShxe\nsJ687X5UeHBktFi/WfUI57OxBSnh5y4fXdCRhDZJUwKBgQDOWeomo5/mgveU9MJg\ny5e2ypS74Qyfo26MuTxOwUuFlr6I/TOepiXesTvjJnZHlme7O2RerkOmlG7wcT2e\nYa/eUZgZBlGLuGwZEPrJRwjuDKApJ9ya1OKYibXh/PSbbP6qHRlan0CQ3eyV7HoQ\nBEIqAWmzk/VWEHleXPkq44B+/wKBgQC5TGy/Ug1MSm7MP+esmHABM3MrqdQWx/nY\ncH9S4pWKdLF56p78+eLze1L5lLioBL+nDtoMuV/N3aKudVAGFOCkf3pCmCShx2BA\n9HLWjUBGqDDTlDVvXwmBota5xeG1IoZBHlGPXhYYOpVZNSgggPiGkoQalIRZzk75\nhUXhG+JBjwKBgDekd0dEB/IYjrpT5bZEL/zSU5j17nl9kGnR6TkzVjIHnAlEfY7i\nLoQGNqfhzzMuk3ohYcdGJmfczq13W65BmTLRvbnBwmtyp3N66KUtynKmZOm0HgCC\nNzf6qljt5OekVGd6wUN2feqSbSFgSunWvCCnkOEjnJxAhPm1CFtQTW3xAoGBAJuw\nrBqgfY3haHDzLNxnBIztxtIkEpDFm5aRB1oECbPY0pnmWYmjCF6d+xy7Kd/6hXF/\nWBSi2O1nUN4WsZM6jXmJppc3sGfB1o0dFzRQYHY9sTDE8ZTPHHSw9owGyNth0735\nFHxKiHP5HS1kLYAJ/UdM6fRPX1j5sH+UzB8VR6jfAoGAbjUwxNB0ZslMnuxNu0JR\nGjG/94BEY1WtYzHSEHKdJ/pRzH3+tyuVDz83eoiP7O1fN5gbGwcflqb1qI1l9TIc\n4jB1wilSsg7GAqxtai3J2fz0sWrkqPSARUrOQDs3VQWeQ4+4IZomPlzxzJ6dR4ga\nSWBHSiicZaFDlAOre+lsrXo=\n-----END PRIVATE KEY-----\n",
+                "client_email": "dialogflow-rqlamu@poc-messnger.iam.gserviceaccount.com",
+                "client_id": "109180004255707178955",
+                "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+                "token_uri": "https://accounts.google.com/o/oauth2/token",
+                "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+                "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-rqlamu%40poc-messnger.iam.gserviceaccount.com"
+            }
+        },
+        "Watson": {
+            "Workspace": "a3d16c65-e0e4-4e70-95f1-62becafcd09f",
+            "username": "11ea99fe-7c86-4dd5-9f17-7b4c16c50c91",
+            "password": "W2G1H8V483yH"
+        }
+    }
+]

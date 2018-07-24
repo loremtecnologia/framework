@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<script>
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+</script>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assine SKY - Finalizar compra</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <!-- teste 2
+    <iframe id="sky" src="" width="100%" height="100%"></iframe> -->
+
+</body>
+<script>
+    var PSID = 0;
+
+    $(document).ready(function () {
+        var sku = getParameterByName('sku');
+        var url = "https://assine2.sky.com.br/campanhas/carrinho/?_GA=0398187473&pdv=ID90330&idseller=951344&sc=1&sku=" + sku + "&qty=1&seller=1"
+        //document.getElementById("sky").src = url;
+        window.location = url;
+        // setTimeout(() => {
+        //     //$.post('https://us-central1-poc-messnger.cloudfunctions.net/skyClose', { "psid": PSID, "nome": $("#userName").val(), "email": $("#mail").val() })
+        // }, 5000);
+
+        // setTimeout(() => {
+        //     MessengerExtensions.requestCloseBrowser(function success() {
+        //     }, function error(err) {
+        //         window.close();
+        //         // an error occurred
+        //     });
+        // }, 10000);
+    });
+
+    window.extAsyncInit = function () {
+        // the Messenger Extensions JS SDK is done loading 
+        MessengerExtensions.getContext('226379760798670',
+            function success(thread_context) {
+                PSID = thread_context.psid;
+                // success
+                //alert(PSID)
+            },
+            function error(err, msg) {
+                // error
+                //alert(msg)
+            }
+        );
+    };
+
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'Messenger'));
+</script>
+
+</html>
